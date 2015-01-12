@@ -1,0 +1,11 @@
+---
+
+- name: Ensure sites list at in known hosts
+  lineinfile:
+    dest: "{{ ssh_known_hosts_path }}"
+    create: yes
+    state: present
+    line: "{{ lookup('pipe', 'ssh-keyscan -t ' + item.type|default(ssh_known_hosts_type_default) + ' ' + item.host|default(item)) }}"
+    regexp: "^{{ (item.host|default(item))|replace('.', '\\.') }}"
+  with_items: ssh_known_hosts
+  when: ssh_known_hosts != false

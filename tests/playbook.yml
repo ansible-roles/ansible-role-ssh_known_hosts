@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  sudo: true
+
+  vars:
+    ssh_known_hosts:
+      - github.com
+      - { host: bitbucket.org, type: rsa }
+
+  roles:
+    - "../../igor_mukhin.ssh_known_hosts"

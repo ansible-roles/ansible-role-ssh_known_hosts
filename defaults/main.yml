@@ -1,0 +1,4 @@
+---
+ssh_known_hosts_path: ~/.ssh/known_hosts # or /root/.ssh/known_hosts or /etc/ssh/ssh_known_hosts
+ssh_known_hosts_type_default: rsa
+ssh_known_hosts: false
