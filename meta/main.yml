@@ -1,9 +1,10 @@
 ---
+
 dependencies: []
 
 galaxy_info:
   author: igor_mukhin
-  description: Add sites to ~/.ssh/known_hosts for Debian/Ubuntu
+  description: Add sites to /etc/ssh/ssh_known_hosts for Debian/Ubuntu
   license: "MIT"
   min_ansible_version: 1.4
   platforms:

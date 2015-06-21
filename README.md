@@ -1,6 +1,6 @@
 # ansible-role-ssh_known_hosts
 
-Add sites to ~/.ssh/known_hosts for Debian/Ubuntu
+Add sites to /etc/ssh/ssh_known_hosts for Debian/Ubuntu
 
 ## Prerequisites
 
@@ -8,7 +8,7 @@ First of all you should install [Ansible](http://www.ansible.com/home) on your m
 
 # Installation
 ```bash
-ansible-galaxy install igor_mukhin.ssh_known_hosts,v0.1.0
+ansible-galaxy install igor_mukhin.ssh_known_hosts
 ```
 
 ## Example playbook
@@ -16,7 +16,6 @@ ansible-galaxy install igor_mukhin.ssh_known_hosts,v0.1.0
 Lets make aliases for symfony2 console command
 
 ```yml
-...
 # playbook.yml
 
 vars:

@@ -9,4 +9,4 @@
       - { host: bitbucket.org, type: rsa }
 
   roles:
-    - "../../igor_mukhin.ssh_known_hosts"
+    - "../../ansible-role-ssh_known_hosts"
