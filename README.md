@@ -1,4 +1,5 @@
 # ansible-role-ssh_known_hosts
+[![Build Status](https://travis-ci.org/ansible-roles/ansible-role-ssh_known_hosts.svg?branch=master)](https://travis-ci.org/ansible-roles/ansible-role-ssh_known_hosts)
 
 Add sites to /etc/ssh/ssh_known_hosts for Debian/Ubuntu
 
