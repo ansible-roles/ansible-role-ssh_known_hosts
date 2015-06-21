@@ -13,7 +13,7 @@ ansible-galaxy install igor_mukhin.ssh_known_hosts
 
 ## Example playbook
 
-Lets make aliases for symfony2 console command
+Lets add github.com and bitbucket.org to known hosts:
 
 ```yml
 # playbook.yml
